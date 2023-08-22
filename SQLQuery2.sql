@@ -24,6 +24,7 @@ CREATE TABLE Orders (
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 GO
+	--Tạo bảng lưu thông tin chi tiết đơn hàng
 CREATE TABLE OrderItems (
     OrderItemID INT PRIMARY KEY,
     OrderID INT,
@@ -42,6 +43,7 @@ CREATE TABLE Employees (
     HireDate DATE
 );
 GO
+	----Tạo bảng lưu hàng tồn kho
 CREATE TABLE Inventory (
     ProductID INT PRIMARY KEY,
     StockQuantity INT,
